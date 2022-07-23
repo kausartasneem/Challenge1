@@ -1,0 +1,19 @@
+{
+  "name": "Challenge",
+  "description": "to load the tag value of page source code",
+  "version": "1.0",
+  "manifest_version": 2,
+  "background": {
+    "scripts": ["js/background/index.js"],
+    "persistent": false
+},
+
+  "permissions": ["storage", "activeTab", "scripting","unlimitedStorage"],
+  "optional_permissions": ["downloads","<all_urls>","webNavigation","file://*/*"],
+ "icons": {
+    "16": "/images/icon16.png",
+    "48": "/images/icon48.png",
+    "128": "/images/icon128.png"
+  },
+  "options_page": "options.html"
+}
